@@ -1,0 +1,9 @@
+E:\projects\T1RedesI\T1RedesI\bin\Debug\T1RedesI.exe
+E:\projects\T1RedesI\T1RedesI\bin\Debug\T1RedesI.pdb
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\T1RedesI.Properties.Resources.resources
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\T1RedesI.exe
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\T1RedesI.pdb
+E:\projects\T1RedesI\T1RedesI\obj\x86\Debug\SimpleTokenRingNetworkSimulator.Form1.resources

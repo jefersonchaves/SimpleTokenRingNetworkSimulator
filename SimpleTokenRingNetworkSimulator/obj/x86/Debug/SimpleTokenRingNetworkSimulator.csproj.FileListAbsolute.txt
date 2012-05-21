@@ -1,0 +1,11 @@
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\bin\Debug\SimpleTokenRingNetworkSimulator.exe
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\bin\Debug\SimpleTokenRingNetworkSimulator.pdb
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\SimpleTokenRingNetworkSimulator.Form1.resources
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\SimpleTokenRingNetworkSimulator.Properties.Resources.resources
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\SimpleTokenRingNetworkSimulator.exe
+E:\projects\T1RedesI\SimpleTokenRingNetworkSimulator\obj\x86\Debug\SimpleTokenRingNetworkSimulator.pdb
+E:\projects\SimpleTokenRingNetworkSimulator\SimpleTokenRingNetworkSimulator\obj\x86\Debug\SimpleTokenRingNetworkSimulator.exe
+E:\projects\SimpleTokenRingNetworkSimulator\SimpleTokenRingNetworkSimulator\obj\x86\Debug\SimpleTokenRingNetworkSimulator.pdb
