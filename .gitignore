@@ -1,6 +1,18 @@
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 bin
 obj
+bin/
+obj/
+*.suo
+.DS_Store
+._.DS_Store
+build/
+TestResult.xml
+*.user
+*.pdb
+._*
+*.ncrunchproject
+*.cache
 
 # mstest test results
 TestResults
