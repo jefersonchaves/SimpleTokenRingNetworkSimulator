@@ -21,8 +21,7 @@ namespace SimpleTokenRingNetworkSimulator.Core
         private List<Message> messagesToSend;
         private Object synObjMsgToSend;
 
-        private System.Threading.Timer tokenManagerTimerPOC;
-        //private System.Timers.Timer tokenManagerTimer;
+        private System.Threading.Timer tokenManagerTimer;
         private Object synObjSendPack;
 
         private IPEndPoint hopConfiguration1;
@@ -145,22 +144,7 @@ namespace SimpleTokenRingNetworkSimulator.Core
                 {
                     SendToken(cancellationToken, sendSocketNextHop, NextHopConfig);
 
-
-                    //this.tokenManagerTimer = new System.Timers.Timer()
-                    //{
-                    //    AutoReset = false,
-                    //    Enabled = false,
-                    //    Interval = MAX_TIME_TOKEN,
-                    //};
-                    //this.tokenManagerTimer.Elapsed += (sender, e) =>
-                    //{
-                    //    SendToken(cancellationToken, sendSocketNextHop, NextHopConfig);
-
-                    //    tokenManagerTimer.Start();
-                    //};
-                    //tokenManagerTimer.Start();
-
-                    this.tokenManagerTimerPOC = new Timer((state) => { SendToken(cancellationToken, sendSocketNextHop, NextHopConfig); /*this.tokenManagerTimerPOC.Change(MAX_TIME_TOKEN, Timeout.Infinite);*/ }, null, MAX_TIME_TOKEN, Timeout.Infinite);
+                    this.tokenManagerTimer = new Timer((state) => { SendToken(cancellationToken, sendSocketNextHop, NextHopConfig); this.tokenManagerTimer.Change(MAX_TIME_TOKEN, Timeout.Infinite); }, null, MAX_TIME_TOKEN, Timeout.Infinite);
 
                     tokenManagerMinTimeStopwatch = Stopwatch.StartNew();
                 }
@@ -178,7 +162,6 @@ namespace SimpleTokenRingNetworkSimulator.Core
                         {
                             if (IsTokenManager)
                             {
-                                //tokenManagerTimer.Stop();
                                 tokenManagerMinTimeStopwatch.Stop();
                             }
 
