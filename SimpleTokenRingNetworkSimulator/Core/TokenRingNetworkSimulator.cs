@@ -39,6 +39,7 @@ namespace SimpleTokenRingNetworkSimulator.Core
 
         public void AddFileToSend(FileInfo file, HopNumbers hopNumToSendFile)
         {
+            //TODO: ADD the CRC calc and store on each message. Please notice that you need to add a new member into the message to store the CRC.
             IEnumerable<Message> newMessages = new Message[] { new Message(CurrentHopConfig, GetHopConfigByNumber(hopNumToSendFile), File.ReadAllBytes(file.FullName)) };
 
             lock (synObjMsgToSend)
@@ -192,7 +193,6 @@ namespace SimpleTokenRingNetworkSimulator.Core
 
                             if (IsTokenManager)
                             {
-                                //tokenManagerTimer.Start();
                                 tokenManagerMinTimeStopwatch.Restart();
                             }
                         }
@@ -209,12 +209,11 @@ namespace SimpleTokenRingNetworkSimulator.Core
                                     messagesToSend.RemoveAt(0);
                                 }
 
-                                //IF CRC is ok then send the token to the next station
                                 SendToken(cancellationToken, sendSocketNextHop, NextHopConfig);
                             }
                             else if (messageReceived.Type == MessageTypes.Data)
                             {
-                                //TODO CRC
+                                //TODO: CRC check
                                 SendMessage(cancellationToken, sendSocketNextHop, new Message(CurrentHopConfig, messageReceived.SenderEndPoint, MessageTypes.Ack));
                             }
                         }
