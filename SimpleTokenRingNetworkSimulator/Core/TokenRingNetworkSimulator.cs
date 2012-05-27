@@ -145,7 +145,7 @@ namespace SimpleTokenRingNetworkSimulator.Core
                 {
                     SendToken(cancellationToken, sendSocketNextHop, NextHopConfig);
 
-                    this.tokenManagerTimer = new Timer((state) => { SendToken(cancellationToken, sendSocketNextHop, NextHopConfig); this.tokenManagerTimer.Change(MAX_TIME_TOKEN, Timeout.Infinite); }, null, MAX_TIME_TOKEN, Timeout.Infinite);
+                    this.tokenManagerTimer = new Timer((state) => { if (!cancellationToken.IsCancellationRequested) { SendToken(cancellationToken, sendSocketNextHop, NextHopConfig); this.tokenManagerTimer.Change(MAX_TIME_TOKEN, Timeout.Infinite); } }, null, MAX_TIME_TOKEN, Timeout.Infinite);
 
                     tokenManagerMinTimeStopwatch = Stopwatch.StartNew();
                 }
