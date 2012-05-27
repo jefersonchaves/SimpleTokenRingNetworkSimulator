@@ -111,7 +111,7 @@ namespace SimpleTokenRingNetworkSimulator
             catch (AggregateException aggEx)
             {
                 if (!startTokenRingSimulatorTask.IsCanceled)
-                    MessageBox.Show(String.Format("Error: {0}.", aggEx), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, String.Format("Error: {0}.", aggEx), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
